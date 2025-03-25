@@ -1,0 +1,11 @@
+Execution Mode                          | Avg Runtime (s)      | Avg Failures | Speedup | Failed Test Cases
+==================================================================================================================================
+Basic pytest                             | 0.73               | 0.00         | 1.00    | None
+Process-based (n=1, load dist)           | 1.14               | 2.00         | 0.64    | tests/test_heap.py::TestBinaryHeap::test_insert, tests/test_heap.py::TestBinaryHeap::test_remove_min
+Process-based (n=auto, load dist)        | 1.29               | 2.00         | 0.57    | tests/test_heap.py::TestBinaryHeap::test_insert, tests/test_heap.py::TestBinaryHeap::test_remove_min
+Thread-based (1 thread, load dist)       | 0.66               | 0.00         | 1.10    | None
+Thread-based (auto threads, load dist)   | 0.82               | 0.00         | 0.89    | None
+Process-based (n=1, no dist)             | 1.40               | 2.00         | 0.52    | tests/test_heap.py::TestBinaryHeap::test_insert, tests/test_heap.py::TestBinaryHeap::test_remove_min
+Process-based (n=auto, no dist)          | 1.14               | 2.00         | 0.64    | tests/test_heap.py::TestBinaryHeap::test_insert, tests/test_heap.py::TestBinaryHeap::test_remove_min
+Thread-based (1 thread, no dist)         | 0.70               | 0.00         | 1.04    | None
+Thread-based (auto threads, no dist)     | 0.73               | 0.00         | 0.99    | None

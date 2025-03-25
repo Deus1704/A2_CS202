@@ -1,0 +1,3 @@
+https://github.com/adbar/trafilatura.git
+https://github.com/3b1b/manim.git
+https://github.com/All-Hands-AI/OpenHands.git
